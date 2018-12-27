@@ -3,7 +3,7 @@
  */
 var Skill = girequire('src/Skill');
 
-module.exports = class GuessnumberSkill extends Skill {
+module.exports = class GuessNumberSkill extends Skill {
 
 /**
  * Constructor
