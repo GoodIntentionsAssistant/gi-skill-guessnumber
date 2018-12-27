@@ -1,7 +1,7 @@
 /**
  * Guess number Skill
  */
-var Skill = require('../../../src/Skill/skill');
+var Skill = girequire('src/Skill');
 
 module.exports = class GuessnumberSkill extends Skill {
 

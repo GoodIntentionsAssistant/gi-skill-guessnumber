@@ -1,7 +1,7 @@
 /**
  * Guess number intent
  */
-const Intent = require('../../../../src/Intent/intent');
+const Intent = girequire('src/Intent');
 var _ = require('underscore');
 
 module.exports = class GuessNumberIntent extends Intent {
