@@ -1,7 +1,7 @@
 /**
  * Guess number Skill
  */
-var Skill = girequire('src/Skill');
+var Skill = girequire('src/Skill/skill');
 
 module.exports = class GuessNumberSkill extends Skill {
 

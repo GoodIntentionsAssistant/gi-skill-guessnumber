@@ -1,8 +1,9 @@
 /**
  * Guess number intent
  */
-const Intent = girequire('src/Intent');
-var _ = require('underscore');
+const Intent = girequire('src/Intent/intent');
+
+const _ = require('underscore');
 
 module.exports = class GuessNumberIntent extends Intent {
 
@@ -13,7 +14,7 @@ module.exports = class GuessNumberIntent extends Intent {
 
 		this.parameter('guess', {
 			name: "Number",
-			entity: "App.Common.Entity.Number",
+			entity: "App.Basics.Entity.Number",
 			required: false,
       action: 'guess'
 		});
@@ -26,7 +27,7 @@ module.exports = class GuessNumberIntent extends Intent {
     }
 
     request.expect({
-      entity: 'App.Common.Entity.Number',
+      entity: 'App.Basics.Entity.Number',
       fail: 'invalid',
       force: true
     });
